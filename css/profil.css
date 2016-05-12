@@ -64,32 +64,32 @@
 	
 }
 #one {
-	background-image: url(images/mountains.jpg);
+	background-image: url(../images/mountains.jpg);
 }
 #two {
-	background-image: url(images/montagnes.jpg);
+	background-image: url(../images/montagnes.jpg);
 }
 
 #three {
-	background-image: url(images/paysage.jpg);
+	background-image: url(../images/paysage.jpg);
 }
 
 #four {
-	background-image: url(images/forêt.jpg);
+	background-image: url(../images/forêt.jpg);
 }
 
 #five {
-	background-image: url(images/tour.jpg);
+	background-image: url(../images/tour.jpg);
 }
 
 #six {
-	background-image: url(images/paris-415476_960_720.jpg);
+	background-image: url(../images/paris-415476_960_720.jpg);
 }
 
 #seven {
-	background-image: url(images/toits.jpg);
+	background-image: url(../images/toits.jpg);
 }
 
 #eight {
-	background-image: url(images/cadenas.jpg);
+	background-image: url(../images/cadenas.jpg);
 }
