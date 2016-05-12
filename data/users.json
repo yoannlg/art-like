@@ -1,18 +1,18 @@
 [
 	{
-		name: 'yoann56',
-		description: 'Photographe amateur',
-		hobbies: 'Animes, rammstein, Bretagne',
-		gallery: [
+		"name": "yoann51",
+		"description": "Photographe amateur",
+		"hobbies": "Animes, rammstein, Bretagne, moto",
+		"gallery": [
 			"img/"
 		]
 
 	},
 	{
-		name: 'celia91',
-		description: 'Photographe amateur',
-		hobbies: 'NCIS, foot, Friends',
-		gallery: [
+		"name": "celia91",
+		"description": "Photographe amateur",
+		"hobbies": "NCIS, foot(PSG), Friends, Rap & Hip Hop US",
+		"gallery": [
 			"img/forêt.jpg",
 			"img/mountains.jpg",
 			"img/toits.jpg",
@@ -22,10 +22,10 @@
 		]
 	},
 	{
-		name: 'riri93',
-		description: 'Photographe amateur',
-		hobbies: ['Teaching', 'Musique', 'Animes'],
-		gallery: [
+		"name": "riri93",
+		"description": "Photographe amateur",
+		"hobbies": ["Teaching", "Musique", "Animes"],
+		"gallery": [
 			"img/pic1.jpeg",
 			"img/pic2.jpeg",
 			"img/pic3.jpeg",
@@ -33,6 +33,5 @@
 			"img/pic5.jpeg",
 			"img/pic6.jpeg",
 		]
-	},
-
+	}
 ]
