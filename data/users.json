@@ -1,12 +1,38 @@
 [
 	{
-		name: 'yoann56'
+		name: 'yoann56',
+		description: 'Photographe amateur',
+		hobbies: 'Animes, rammstein, Bretagne',
+		gallery: [
+			"img/"
+		]
+
 	},
 	{
 		name: 'celia91',
+		description: 'Photographe amateur',
+		hobbies: 'NCIS, foot, Friends',
+		gallery: [
+			"img/forêt.jpg",
+			"img/mountains.jpg",
+			"img/toits.jpg",
+			"img/cadenas.jpg",
+			"img/paysage.jpg",
+			"img/tour.jpg",
+		]
 	},
 	{
 		name: 'riri93',
+		description: 'Photographe amateur',
+		hobbies: ['Teaching', 'Musique', 'Animes'],
+		gallery: [
+			"img/pic1.jpeg",
+			"img/pic2.jpeg",
+			"img/pic3.jpeg",
+			"img/pic4.jpeg",
+			"img/pic5.jpeg",
+			"img/pic6.jpeg",
+		]
 	},
 
 ]
