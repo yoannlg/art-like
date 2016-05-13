@@ -14,4 +14,4 @@ var app = angular.module('ArtLike', ['ngRoute']);
 // 		.otherwise({
 // 			redirectTo: '/'
 // 		});
-// })
+// });

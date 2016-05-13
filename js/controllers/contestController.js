@@ -8,7 +8,15 @@ app.controller('contestController', function($scope){
 			nbr_votes
 		}
 	*/
-	this.players = [];
-	$scope.name = 'lol';
+	this.players = [
+	{
+		name: "harysson",
+		url: "",
+	}];
+	$scope.name = '';
 	$scope.artwork = '';
+
+	$scope.nbRows
+
+
 });
