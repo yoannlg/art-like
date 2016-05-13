@@ -9,7 +9,7 @@
 	<script src="../bower_components/angular/angular.js"></script>
 	<script src="../bower_components/angular-route/angular-route.js"></script>
    <script type="text/javascript" src="../js/app.js"></script>
-   <script type="text/javascript" src="../js/controllers/profilController.js"></script>
+   <script type="text/javascript" src="../js/controllers/ProfilController.js"></script>
 
 
   
@@ -20,18 +20,19 @@
   <div class="container" ng-controller="ProfilController as profil">
 	
 	<div>
-	<div class="pseudo"><strong>{{profil.user.name}}</strong></div>
+	<div class="pseudo"><strong>{{profil.users[1].name}}</strong></div>
 		<div class="image"></div>
 		
-		<div>{{profil.user.description}}</div>
-		<div><strong>Hobbies:</strong>{{profil.user.hobbie}}</div> <==ng repeat
-		<div>Nombre d'oeuvres publiées: {{profil.user.gallery.length}}</div>
+		<div>{{profil.users[1].description}}</div>
+		<div><strong>Hobbies:</strong>{{profil.users[1].hobbies}}</div>
+		<div>Nombre d'oeuvres publiées: {{profil.users[1].gallery.length}}</div>
+		<input ng-model="name"></input>
 	</div>
 	
 	<div class="gallerie">
 		<h3><strong>Sa gallerie:</strong></h3>
 		<div class="row">
-			<div class="col-md-2 col-md-offset-1 img-all" id="one" ><img ng-src="{{profil.user.gallery[0]}}"></div>
+			<div class="col-md-2 col-md-offset-1 img-all" ><img ng-src="{{profil.users[1].gallery[1]}}"></div>
 			<div class="col-md-2 img-all" id="two"></div>
 			<div class="col-md-2 img-all" id="three"></div>
 			<div class="col-md-2 img-all" id="four"></div>	
