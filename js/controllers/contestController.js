@@ -31,11 +31,11 @@ app.controller('contestController', function($scope){
 var players = [
 	{
 		"name": "yoann56",
-		"url": "../img/pic.jpg",
+		"url": "../img/paysage.jpg",
 		"nbrVotes": 0
 	},
 	{
 		"name": "celia91",
-		"url": "../img/pic2.jpg",
+		"url": "../img/mountains.jpg",
 		"nbrVotes": 0
 	}];
