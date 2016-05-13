@@ -11,8 +11,7 @@
 	<script src="../js/controllers/contestController.js"></script>
 </head>
 <body ng-app="ArtLike">
-	<div ng-view></div>
-	<div ng-controller="contestController as contestCtrl" class="container-fluid">
+	<div ng-controller="contestController as contest" class="container-fluid">
 		<div class="row contest-head">
 			<h1 class="contest-name text-center">Concours Photo #1</h1>
 			<div class="contest-infos col-xs-12 col-md-6 text-center">
@@ -31,58 +30,28 @@
 					</div>
 					<div class="form-group">
 						<label>Oeuvre:</label>
-						<input></input>
+						<input ng-model="artwork"></input>
 					</div>
-					<button type="button" class="btn btn-default btn-blue btn-large"> Je Participe </button>
+					<button type="button" class="btn btn-default btn-blue btn-large" ng-click="subscribe()"> Je Participe </button>
 				</form>
 			</div>
 		</div>
 		<div class="contest-pics">
 			<div class="row">
-				<div class="picture-card col-xs-6 col-md-2 col-md-offset-2">
-					<img src="../img/pic.jpeg">
+				<div class="picture-card col-xs-6 col-md-2 col-md-offset-2" ng-repeat="player in players" ng-class="{ 'col-md-offset-1':isFirst(player)}">
+					<img ng-src="{{player.url}}">
 					<div class="votes-bar">
 						<span></span>
 					</div>
 					<div class="card-text">
 						<p class="text-center">
-							<a href="#">participant08</a> a 76% des votes !
+							<a href="#">{{player.name}}</a> a 76% des votes !
 						</p>
 						<p class="text-center">
 							<button type="button" class="btn btn-default btn-blue">Voter</button>
 						</p>
 					</div>
-				</div>
-
-				<div class="picture-card col-xs-6 col-md-2 col-md-offset-1">
-					<img src="../img/pic.jpeg">
-					<div class="votes-bar">
-						<span></span>
-					</div>
-					<div class="card-text">
-						<p class="text-center">
-							<a href="#">participant08</a> a 76% des votes !
-						</p>
-						<p class="text-center">
-							<button type="button" class="btn btn-default btn-blue">Voter</button>
-						</p>
-					</div>
-				</div>
-
-				<div class="picture-card col-xs-6 col-md-2 col-md-offset-1">
-					<img src="../img/pic.jpeg">
-					<div class="votes-bar">
-						<span></span>
-					</div>
-					<div class="card-text">
-						<p class="text-center">
-							<a href="#">participant08</a> a 76% des votes !
-						</p>
-						<p class="text-center">
-							<button type="button" class="btn btn-default btn-blue">Voter</button>
-						</p>
-					</div>
-				</div>
+				</div>				
 
 
 
