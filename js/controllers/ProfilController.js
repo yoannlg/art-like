@@ -22,7 +22,7 @@ var users = [
 		"description": "Photographe amateur",
 		"hobbies": "NCIS, foot(PSG), Friends, Rap & Hip Hop US",
 		"gallery": [
-			"img/forêt.jpg",
+			"../img/forêt.jpg",
 			"img/mountains.jpg",
 			"img/toits.jpg",
 			"img/cadenas.jpg",

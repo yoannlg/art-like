@@ -13,6 +13,8 @@ app.controller('contestController', function($scope){
 	$scope.name = '';
 	$scope.artwork = '';
 
+	$scope.totalVotes = players.reduce(function(a,b){return a.nbrVotes+b.nbrVotes;});
+	console.log($scope.totalVotes);
 	$scope.subscribe = function() {
 		var player = {};
 		player.name = $scope.name;
@@ -26,16 +28,21 @@ app.controller('contestController', function($scope){
 		return players.indexOf(player) % 3 === 0;
 	}
 
+	$scope.vote = function(player) {
+		player.nbrVotes++;
+		console.log(player.nbrVotes);
+	}
+
 });
 
 var players = [
 	{
 		"name": "yoann56",
 		"url": "../img/paysage.jpg",
-		"nbrVotes": 0
+		"nbrVotes": 4
 	},
 	{
 		"name": "celia91",
 		"url": "../img/mountains.jpg",
-		"nbrVotes": 0
+		"nbrVotes": 8
 	}];

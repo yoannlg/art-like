@@ -16,7 +16,7 @@
 			<h1 class="contest-name text-center">Concours Photo #1</h1>
 			<div class="contest-infos col-xs-12 col-md-6 text-center">
 				<h2>
-					<span> 1,658 </span> participants
+					<span> {{players.length}} </span> participants
 				</h2>
 				<h2>
 					<span> 500 € </span> de cagnotte
@@ -44,11 +44,11 @@
 						<span></span>
 					</div>
 					<div class="card-text">
-						<p class="text-center">
-							<a href="profil.html">{{player.name}}</a> a 76% des votes !
+						<p class="text-center" ng-model="player.nbrVotes">
+							<a href="profil.html">{{player.name}}</a> a {{player.nbrVotes/totalVotes*100}}% des votes !
 						</p>
 						<p class="text-center">
-							<button type="button" class="btn btn-default btn-blue">Voter</button>
+							<button type="button" class="btn btn-default btn-blue" ng-click="vote(player)">Voter</button>
 						</p>
 					</div>
 				</div>				
